@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="main-block">
+            <div class="half-block">
+                <h2>
+                    Don't have an account?
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi nostrum magnam quaerat
+                    placeat.
+                </p>
+                <button id="reg">sing up</button>
+            </div>
+            <div class="half-block">
+                <h2>Have an account?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi nostrum magnam quaerat
+                    placeat.
+                </p>
+                <button id="log">login in</button>
+            </div>
+            <div class="overlay-block register">
+                <div class="authorization-block" id="reg">
+                    <h1>sing up</h1>
+                    <form>
+                        <div class="inpt-block">
+                            <input type="text" id="fullname-reg" required>
+                            <label for="fullname-reg">Full Name</label>
+                        </div>
+                        <div class="inpt-block">
+                            <input type="email" id="email-reg" required>
+                            <label for="email-reg">E-mail</label>
+                        </div>
+                        <div class="inpt-block">
+                            <input type="password" id="password-reg" required>
+                            <label for="password-reg">Password</label>
+                        </div>
+                        <button type="submit">sing up</button>
+                    </form>
+                </div>
+                <div class="authorization-block hidden" id="log">
+                    <h1>login in</h1>
+                    <form>
+                        <div class="inpt-block">
+                            <input type="email" id="email-log" required>
+                            <label for="email-log">E-mail</label>
+                        </div>
+                        <div class="inpt-block">
+                            <input type="password" id="password-log" required>
+                            <label for="password-log">Password</label>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                        <button type="submit">login in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

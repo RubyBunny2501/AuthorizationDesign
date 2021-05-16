@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+  color: #f2f2f2;
+  background: url("../src/fakurian-design-TeCdlzOUneQ-unsplash.jpg") center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-block {
+  width: 70%;
+  height: 60%;
+  position: relative;
+  display: flex;
+  background: #333;
+}
+
+.half-block {
+  width: 50%;
+  height: 100%;
+  padding: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.4);
+}
+.half-block h2 {
+  font-size: 37px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
+}
+.half-block p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.half-block button {
+  max-width: 150px;
+  text-transform: uppercase;
+  border: 1px solid #f2f2f2;
+  background: none;
+  color: #f2f2f2;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.half-block button:hover {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.overlay-block {
+  width: 50%;
+  height: 110%;
+  position: absolute;
+  transition: 0.35s;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f2f2f2;
+}
+.overlay-block.register {
+  left: 3%;
+}
+.overlay-block.login {
+  left: 47%;
+}
+
+.authorization-block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 60px;
+  transition: 0.35s;
+}
+.authorization-block.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.authorization-block h1 {
+  color: #3498db;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+.authorization-block form {
+  position: relative;
+}
+.authorization-block .inpt-block {
+  width: 100%;
+  border-bottom: 1px solid #333;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 45px;
+}
+.authorization-block .inpt-block label {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.15s;
+  user-select: none;
+  color: #BFBFBF;
+  font-size: 18px;
+  font-weight: 500;
+}
+.authorization-block .inpt-block input {
+  width: 100%;
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 24px;
+  color: #333;
+}
+.authorization-block .inpt-block input:focus ~ label, .authorization-block .inpt-block input:valid ~ label, .authorization-block .inpt-block input:invalid ~ label {
+  top: -15px;
+}
+.authorization-block button {
+  padding: 1em 1.5em;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background: #3498db;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+.authorization-block a {
+  position: absolute;
+  left: 0;
+  color: #BFBFBF;
+  font-size: 16px;
+  font-weight: 500;
+  transform: translateY(50%);
+}
+
+/*# sourceMappingURL=style.css.map */
