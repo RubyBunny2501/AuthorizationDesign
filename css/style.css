@@ -143,6 +143,7 @@ main {
   color: #333;
 }
 .authorization-block .inpt-block input:focus ~ label, .authorization-block .inpt-block input:valid ~ label {
+  font-size: 14px;
   top: -15px;
 }
 .authorization-block button {
